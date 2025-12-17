@@ -3,16 +3,14 @@
    ========================================================= */
 
 :root{
-  --accent: #0b2a5b;   /* dark blue */
-  --text: #111111;
-  --muted: #444444;
-  --line: #e6e6e6;
+  --accent: #0b2a5b;  /* dark blue */
+  --text:   #111111;
+  --muted:  #444444;
+  --line:   #e6e6e6;
 }
 
 /* -------- Base -------- */
-*{
-  box-sizing: border-box;
-}
+*{ box-sizing: border-box; }
 
 body{
   margin: 0;
@@ -52,6 +50,12 @@ body{
   text-decoration: underline;
 }
 
+/* -------- Hero -------- */
+.hero{
+  border-bottom: 1px solid var(--line);
+  padding: 0;
+}
+
 /* -------- Headings -------- */
 h1{
   font-size: 34px;
@@ -70,7 +74,7 @@ h3{
 
 /* -------- Text -------- */
 p{
-  margin: 8px 0;
+  margin: 10px 0;
   font-size: 16px;
   line-height: 1.6;
   color: var(--muted);
@@ -87,54 +91,9 @@ hr{
   border-top: 1px solid var(--line);
 }
 
+.smallgap{ margin-top: 6px; }
+
 /* -------- Banner Image (ERC / DFG safe) -------- */
 .banner-img{
   display: block;
   max-width: 100%;
-  height: auto;
-  margin: 18px auto 24px auto;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-}
-
-/* -------- Research Cards -------- */
-.pillars{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin-top: 10px;
-}
-
-@media (min-width: 860px){
-  .pillars{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.card{
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 14px;
-}
-
-.card h3{
-  margin-top: 0;
-}
-
-/* -------- Links -------- */
-a{
-  color: var(--accent);
-}
-
-a:hover{
-  text-decoration: underline;
-}
-
-/* -------- Footer -------- */
-.footer{
-  border-top: 1px solid var(--line);
-  padding: 18px 0;
-  margin-top: 26px;
-  color: var(--muted);
-  font-size: 14px;
-}
