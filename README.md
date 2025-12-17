@@ -1,4 +1,4 @@
-# Elitas Lab
+# Elitas Hartmann Lab
 ### Single-Cell Microengineering of Stress and Adaptation
 
 We engineer microfluidic and bioelectronic platforms to quantify how single cells respond to stress in disease and infection.
