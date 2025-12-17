@@ -1,52 +1,43 @@
-as<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Elitas Hartmann Lab</title>
-<link rel="stylesheet" href="/ElitasHartmann.github.io/assets/style.css">
-</head>
-<body>
 
+  <!-- Use absolute path for project pages -->
+  <link rel="stylesheet" href="/ElitasHartmann.github.io/assets/style.css">
+</head>
+
+<body>
   <div class="topbar">
     <div class="container nav">
-      <a href="./">Home</a>
-      <a href="./research.html">Research</a>
-      <a href="./people.html">People</a>
-      <a href="./publications.html">Publications</a>
-      <a href="./contact.html">Contact</a>
+      <a href="/ElitasHartmann.github.io/">Home</a>
+      <a href="/ElitasHartmann.github.io/research.html">Research</a>
+      <a href="/ElitasHartmann.github.io/people.html">People</a>
+      <a href="/ElitasHartmann.github.io/publications.html">Publications</a>
+      <a href="/ElitasHartmann.github.io/contact.html">Contact</a>
     </div>
   </div>
 
-  <div class="container hero">
-    <!-- Optional: add a banner image later (see below) -->
-<img src="./assets/microfluidic_stress_schematic.png"
-     alt="Single-cell microfluidic stress adaptation schematic"
-     class="banner-img">
+  <div class="container">
+    <!-- Banner image: absolute path so it always loads -->
+    <img
+      src="/ElitasHartmann.github.io/assets/banner.png"
+      alt="Abstract microfluidic schematic: single cells under controlled stress gradients"
+      class="banner-img"
+    >
 
     <h1>SHIELD Lab</h1>
-    <p class="smallgap"><b>Single-Cell Microengineering of Stress and Adaptation</b></p>
+    <p><b>Single-Cell Microengineering of Stress and Adaptation</b></p>
 
-    <div class="section">
-      <p>
-        We engineer microfluidic and bioelectronic platforms to quantify how single cells respond to stress in disease and infection.
-        Please check our projects <a class="link" href="./research.html">here</a>.
-      </p>
+    <p>
+      We engineer microfluidic and bioelectronic platforms to quantify how single cells respond to stress in disease and infection.
+    </p>
 
-      <p>
-        We work across infection biology, cancer–immune microenvironments, and next-generation biosensing.
-        Please check our team <a class="link" href="./people.html">here</a>.
-      </p>
-    </div>
+    <hr>
+
+    <p><b>Contact:</b> meltem.elitas@partner.kit.edu</p>
   </div>
-
-  <div class="container footer">
-    <div><b>Contact:</b> meltem.elitas@partner.kit.edu</div>
-  </div>
-
-  <script>
-   document.getElementById('banner').style.backgroundImage =
-    'url("./assets/banner.png")';
-  </script>
 </body>
 </html>
