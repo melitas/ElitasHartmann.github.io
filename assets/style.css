@@ -49,6 +49,7 @@ body{
   border-radius:6px;
   background-size:cover;
   background-position:center;
+  background-image: url("./banner.png");
 }
 h1{ margin: 0 0 6px; font-size: 34px; }
 h2{ margin: 26px 0 10px; font-size: 22px; }
