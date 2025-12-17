@@ -1,73 +1,140 @@
+/* =========================================================
+   SHIELD Lab — Minimal Academic Style (ERC / DFG Safe)
+   ========================================================= */
+
 :root{
-  --accent:#0b2a5b; /* dark blue */
-  --text:#111;
-  --muted:#444;
-  --line:#e6e6e6;
+  --accent: #0b2a5b;   /* dark blue */
+  --text: #111111;
+  --muted: #444444;
+  --line: #e6e6e6;
 }
 
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  color:var(--text);
-  background:#fff;
+/* -------- Base -------- */
+*{
+  box-sizing: border-box;
 }
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: #ffffff;
+}
+
+/* -------- Layout -------- */
 .container{
   max-width: 980px;
   margin: 0 auto;
   padding: 0 18px;
 }
 
+/* -------- Navigation -------- */
 .topbar{
-  border-bottom:1px solid var(--line);
-  background:#fff;
+  border-bottom: 1px solid var(--line);
+  background: #ffffff;
 }
-.nav{
-  display:flex;
-  gap:18px;
-  align-items:center;
-  padding:14px 0;
-  flex-wrap:wrap;
-}
-.nav a{
-  color:var(--accent);
-  text-decoration:none;
-  font-weight:600;
-}
-.nav a:hover{ text-decoration:underline; }
 
-.hero{
-  border-bottom:1px solid var(--line);
-  padding:0;
+.nav{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 0;
+  flex-wrap: wrap;
 }
-  .banner-img{
+
+.nav a{
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover{
+  text-decoration: underline;
+}
+
+/* -------- Headings -------- */
+h1{
+  font-size: 34px;
+  margin: 10px 0 6px 0;
+}
+
+h2{
+  font-size: 22px;
+  margin: 26px 0 10px 0;
+}
+
+h3{
+  font-size: 18px;
+  margin: 12px 0 6px 0;
+}
+
+/* -------- Text -------- */
+p{
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+ul{
+  margin: 8px 0 8px 18px;
+  color: var(--muted);
+}
+
+hr{
+  margin: 26px 0;
+  border: none;
+  border-top: 1px solid var(--line);
+}
+
+/* -------- Banner Image (ERC / DFG safe) -------- */
+.banner-img{
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 18px auto;
+  margin: 18px auto 24px auto;
   border: 1px solid var(--line);
   border-radius: 6px;
-
 }
-h1{ margin: 0 0 6px; font-size: 34px; }
-h2{ margin: 26px 0 10px; font-size: 22px; }
-p{ margin: 10px 0; font-size: 16px; line-height: 1.6; color: var(--muted); }
-.smallgap{ margin-top: 6px; }
 
-.link{
-  color:var(--accent);
-  text-decoration:none;
-  font-weight:700;
+/* -------- Research Cards -------- */
+.pillars{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 10px;
 }
-.link:hover{ text-decoration:underline; }
 
-.section{
-  padding: 6px 0 26px;
+@media (min-width: 860px){
+  .pillars{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
+
+.card{
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.card h3{
+  margin-top: 0;
+}
+
+/* -------- Links -------- */
+a{
+  color: var(--accent);
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/* -------- Footer -------- */
 .footer{
-  border-top:1px solid var(--line);
-  padding:18px 0;
-  margin-top:18px;
-  color:var(--muted);
-  font-size:14px;
+  border-top: 1px solid var(--line);
+  padding: 18px 0;
+  margin-top: 26px;
+  color: var(--muted);
+  font-size: 14px;
 }
